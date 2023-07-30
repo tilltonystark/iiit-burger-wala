@@ -1,0 +1,15 @@
+
+@import "./colors.scss";
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+// Poore anchor tag me koi decoration nahii chahiye hame
+a {
+    text-decoration: none;
+}
