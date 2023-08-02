@@ -8,12 +8,18 @@ import "./styles/menu.scss";
 import "./styles/menuCard.scss";
 import "./styles/footer.scss";
 import "./styles/contact.scss";
+import "./styles/cart.scss";
+import "./styles/shipping.scss";
+import "./styles/confirmorder.scss";
+
 
 import Header from './components/layout/Header';
 import Body from './components/home/Body';
 import Footer from './components/layout/Footer';
 import Contact from "./components/contact/Contact";
-
+import Cart from "./components/cart/Cart"
+import Shipping from "./components/cart/Shipping";
+import ConfirmOrder from "./components/cart/ConfirmOrder";
 
 function App() {
   return (
@@ -22,6 +28,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/shipping" element={<Shipping />} />
+        <Route path="/confirmorder" element={<ConfirmOrder />} />
       </Routes>
       <Footer/>
     </Router>
