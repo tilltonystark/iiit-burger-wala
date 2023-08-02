@@ -1,2 +1,73 @@
 @import './colors.scss';
 
+.confirmOrder {
+    padding: 3rem;
+    width: 100%;
+    height: 80vh;
+    background-color:  $lightorange;
+    
+    > main {
+        height: 100%;
+        max-width: 900px;
+        // padding: 2rem;
+        margin: auto;
+        background-color: white;
+
+        h1 {
+            padding: 2rem;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        > form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+
+            > div {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0.5rem;
+                border-radius: 4px;
+                padding: 1rem;
+                background-color: rgb(240, 236, 236);
+                cursor: pointer;
+
+                > label {
+                    white-space: nowrap;
+                }
+            }
+
+            > button {
+                background-color: $orange;
+                padding: 0.5rem 2rem;
+                border: none;
+                color: white;
+                font-size: 1rem;
+                border-radius: 4px;
+                margin-top: 2rem;
+                cursor: pointer;
+                text-align: center;
+
+                &:hover {
+                    background-color: $darkorange;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .confirmOrder > main > form {
+        > div {
+            width: 100%;
+        }
+        > button {
+            width: 100%;
+        }
+    }
+}
