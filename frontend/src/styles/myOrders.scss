@@ -1,0 +1,66 @@
+@import './colors.scss';
+
+.tableClass {
+    background-color: $lightorange;
+    // background-color: white;
+    width: 100%;
+    padding: 3rem;
+    height: 90vh;
+
+    > main {
+        max-width: 900px;
+        background-color: white;
+        margin: auto;
+        padding: 2rem;
+        height: fit-content;
+        overflow-x: auto;
+
+        > table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+
+            tr {
+                background-color: whitesmoke;
+            }
+
+            td, th {
+                padding: 1rem;
+            }
+
+            th {
+                background-color: $dark;
+                color: white;
+                
+                &:first-child {
+                    border-radius: 10px 0 0 0;
+                }
+
+                &:last-child {
+                    border-radius: 0 10px 0 0;
+                }
+            }
+
+            td {
+                color: $lightdark;
+
+                > img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                }
+
+                > a {
+                    color: $orange;
+                }
+
+                > button {
+                    border: none;
+                    cursor: pointer;
+                    margin: 0.25rem;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

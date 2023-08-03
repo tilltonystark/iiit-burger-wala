@@ -1,5 +1,5 @@
 import React from "react";
-import Founder from "./Founder";
+import Founder from "../about/Founder";
 import Menu from "./Menu";
 
 const Body = () => {
@@ -13,7 +13,6 @@ const Body = () => {
             <a href="#menu">Explore menu</a>
         </section>
         <Menu/>
-        <Founder/>
     </>
 };
 

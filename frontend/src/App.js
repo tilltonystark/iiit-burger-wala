@@ -13,6 +13,8 @@ import "./styles/shipping.scss";
 import "./styles/confirmorder.scss";
 import "./styles/login.scss";
 import "./styles/profile.scss";
+import "./styles/myOrders.scss";
+import "./styles/orderdetails.scss";
 
 import Header from './components/layout/Header';
 import Body from './components/home/Body';
@@ -24,6 +26,9 @@ import ConfirmOrder from "./components/cart/ConfirmOrder";
 import PaymentSuccess from "./components/cart/PaymentSuccess.jsx";
 import Login from "./components/login/Login";
 import Profile from "./components/profile/Profile";
+import MyOrders from "./components/orders/MyOrders";
+import OrderDetails from "./components/orders/OrderDetails";
+import Founder from "./components/about/Founder";
 
 function App() {
   return (
@@ -32,12 +37,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<Founder />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirmorder" element={<ConfirmOrder />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
+        <Route path="/myorders" element={<MyOrders />} />
+        <Route path="/order/:id" element={<OrderDetails />} />
       </Routes>
       <Footer/>
     </Router>
